@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundforlist"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/twodp"
+        android:layout_marginLeft="@dimen/tendp"
+        android:layout_marginRight="@dimen/tendp"
+        android:layout_marginTop="@dimen/tendp">
+
+        <TextView
+            android:id="@+id/tv_productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twentydp"
+            android:gravity="center"
+            android:padding="@dimen/smalldp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="@string/placeholder"
+
+            />
+
+        <View
+            android:id="@+id/divder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onedp"
+            android:layout_below="@id/tv_productName"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/LinearBelowDivider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divder">
+
+            <TextView
+                android:id="@+id/tv_productPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/smalldp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorofprice"
+                android:textStyle="normal"
+                tools:text="@string/placeholder" />
+
+            <View
+                android:layout_width="@dimen/onedp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@android:color/darker_gray"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_productQuantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/smalldp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorofprice"
+                android:textStyle="normal"
+                tools:text="@string/placeholder" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divder2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onedp"
+            android:layout_below="@id/LinearBelowDivider"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/saleBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearBelowDivider"
+            android:layout_marginBottom="@dimen/meddp"
+            android:layout_marginLeft="@dimen/fourtytwodp"
+            android:layout_marginRight="@dimen/fourtytwodp"
+            android:layout_marginTop="@dimen/meddp"
+            android:background="@color/backgroundforlist"
+            android:gravity="center"
+            android:padding="@dimen/smalldp"
+            android:text="@string/saleBtn"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+</LinearLayout>

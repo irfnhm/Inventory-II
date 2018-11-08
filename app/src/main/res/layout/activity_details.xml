@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:context=".DetailsActivity">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/smalldp"
+            android:background="@android:color/white"
+            android:padding="@dimen/smalldp"
+            android:theme="@style/AppTheme">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/produtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/meddp"
+                android:drawablePadding="@dimen/smalldp"
+                android:hint="@string/productName"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/smalldp"
+                android:textSize="@dimen/fifteensp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/smalldp"
+            android:theme="@style/AppTheme">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/produtPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/meddp"
+                android:drawablePadding="@dimen/smalldp"
+                android:hint="@string/productPrice"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:padding="@dimen/smalldp"
+                android:textSize="@dimen/fifteensp" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_marginLeft="@dimen/meddp"
+                android:layout_height="match_parent"
+                android:text="@string/removeone"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/twentyfivesp"
+                android:id="@+id/removeOneQuantty"
+                android:textStyle="bold"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="@dimen/smalldp"
+                android:theme="@style/AppTheme">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/productQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/meddp"
+                    android:drawablePadding="@dimen/smalldp"
+                    android:hint="@string/productQuantity"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="@dimen/smalldp"
+                    android:textSize="@dimen/fifteensp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/meddp"
+                android:text="@string/addone"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:id="@+id/addOneQuantity"
+                android:textStyle="bold"
+                android:textSize="@dimen/twentyfivesp"/>
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/smalldp"
+            android:theme="@style/AppTheme">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/supplierName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/meddp"
+                android:drawablePadding="@dimen/smalldp"
+                android:hint="@string/supplierName"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/smalldp"
+                android:textSize="@dimen/fifteensp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/smalldp"
+            android:theme="@style/AppTheme">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/supplierPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/meddp"
+                android:drawablePadding="@dimen/smalldp"
+                android:hint="@string/supplierPhone"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="@dimen/smalldp"
+                android:textSize="@dimen/fifteensp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/getfromDB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/meddp"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/meddp"
+            android:text="@string/viewResult"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/twentysp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addtoDB"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/meddp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:focusable="true"
+                android:padding="@dimen/meddp"
+                android:text="@string/addToInventory"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/twentysp" />
+
+            <Button
+                android:id="@+id/callSupplier"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/meddp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:focusable="true"
+                android:padding="@dimen/meddp"
+                android:text="@string/call_supplier"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/fifteensp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

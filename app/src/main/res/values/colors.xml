@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c0ca33</color>
+    <color name="colorPrimaryDark">#827717</color>
+    <color name="colorAccent">#4caf50</color>
+    <color name="purple3">#504071</color>
+    <color name="backgroundforlist">#f3f3f0</color>
+    <color name="colorofprice">#757575</color>
+</resources>
